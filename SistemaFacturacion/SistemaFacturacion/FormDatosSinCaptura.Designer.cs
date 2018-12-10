@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_datos_sin_captura));
             this.groupBox_SM = new System.Windows.Forms.GroupBox();
+            this.richTextBoxbil = new System.Windows.Forms.RichTextBox();
+            this.labelBil = new System.Windows.Forms.Label();
             this.button_siguiente = new System.Windows.Forms.Button();
             this.richTextBoxTaxAmount1 = new System.Windows.Forms.RichTextBox();
             this.richTextBoxVendorCountry = new System.Windows.Forms.RichTextBox();
@@ -75,8 +77,6 @@
             this.label_sapbox = new System.Windows.Forms.Label();
             this.label_currency = new System.Windows.Forms.Label();
             this.label_PoNo = new System.Windows.Forms.Label();
-            this.labelBil = new System.Windows.Forms.Label();
-            this.richTextBoxbil = new System.Windows.Forms.RichTextBox();
             this.groupBox_SM.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,12 +130,32 @@
             this.groupBox_SM.Controls.Add(this.label_sapbox);
             this.groupBox_SM.Controls.Add(this.label_currency);
             this.groupBox_SM.Controls.Add(this.label_PoNo);
-            this.groupBox_SM.Location = new System.Drawing.Point(32, 12);
+            this.groupBox_SM.Location = new System.Drawing.Point(12, 12);
             this.groupBox_SM.Name = "groupBox_SM";
-            this.groupBox_SM.Size = new System.Drawing.Size(631, 457);
+            this.groupBox_SM.Size = new System.Drawing.Size(685, 457);
             this.groupBox_SM.TabIndex = 0;
             this.groupBox_SM.TabStop = false;
             this.groupBox_SM.Text = "Registros que no cambian";
+            this.groupBox_SM.Enter += new System.EventHandler(this.groupBox_SM_Enter_1);
+            // 
+            // richTextBoxbil
+            // 
+            this.richTextBoxbil.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBoxbil.Location = new System.Drawing.Point(436, 361);
+            this.richTextBoxbil.Name = "richTextBoxbil";
+            this.richTextBoxbil.Size = new System.Drawing.Size(169, 25);
+            this.richTextBoxbil.TabIndex = 44;
+            this.richTextBoxbil.Text = "P500928182";
+            // 
+            // labelBil
+            // 
+            this.labelBil.AutoSize = true;
+            this.labelBil.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBil.Location = new System.Drawing.Point(380, 366);
+            this.labelBil.Name = "labelBil";
+            this.labelBil.Size = new System.Drawing.Size(29, 20);
+            this.labelBil.TabIndex = 43;
+            this.labelBil.Text = "BIL";
             // 
             // button_siguiente
             // 
@@ -158,200 +178,180 @@
             // 
             this.richTextBoxTaxAmount1.Location = new System.Drawing.Point(436, 255);
             this.richTextBoxTaxAmount1.Name = "richTextBoxTaxAmount1";
-            this.richTextBoxTaxAmount1.ReadOnly = true;
             this.richTextBoxTaxAmount1.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxTaxAmount1.TabIndex = 41;
-            this.richTextBoxTaxAmount1.Text = "";
+            this.richTextBoxTaxAmount1.Text = "0";
             // 
             // richTextBoxVendorCountry
             // 
             this.richTextBoxVendorCountry.Location = new System.Drawing.Point(134, 417);
             this.richTextBoxVendorCountry.Name = "richTextBoxVendorCountry";
-            this.richTextBoxVendorCountry.ReadOnly = true;
             this.richTextBoxVendorCountry.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxVendorCountry.TabIndex = 30;
-            this.richTextBoxVendorCountry.Text = "";
+            this.richTextBoxVendorCountry.Text = "MX";
             // 
             // richTextBoxaddress1
             // 
             this.richTextBoxaddress1.Location = new System.Drawing.Point(134, 62);
             this.richTextBoxaddress1.Name = "richTextBoxaddress1";
-            this.richTextBoxaddress1.ReadOnly = true;
             this.richTextBoxaddress1.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxaddress1.TabIndex = 40;
-            this.richTextBoxaddress1.Text = "";
+            this.richTextBoxaddress1.Text = "1 PROCTER & GAMBLE PLAZA";
             // 
             // richTextBoxaddress2
             // 
             this.richTextBoxaddress2.Location = new System.Drawing.Point(134, 94);
             this.richTextBoxaddress2.Name = "richTextBoxaddress2";
-            this.richTextBoxaddress2.ReadOnly = true;
             this.richTextBoxaddress2.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxaddress2.TabIndex = 39;
-            this.richTextBoxaddress2.Text = "";
+            this.richTextBoxaddress2.Text = "OH";
             // 
             // richTextBoxcity
             // 
             this.richTextBoxcity.Location = new System.Drawing.Point(134, 125);
             this.richTextBoxcity.Name = "richTextBoxcity";
-            this.richTextBoxcity.ReadOnly = true;
             this.richTextBoxcity.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxcity.TabIndex = 38;
-            this.richTextBoxcity.Text = "";
+            this.richTextBoxcity.Text = "CINCINNATI";
             // 
             // richTextBoxPostalCode
             // 
             this.richTextBoxPostalCode.Location = new System.Drawing.Point(134, 156);
             this.richTextBoxPostalCode.Name = "richTextBoxPostalCode";
-            this.richTextBoxPostalCode.ReadOnly = true;
             this.richTextBoxPostalCode.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxPostalCode.TabIndex = 37;
-            this.richTextBoxPostalCode.Text = "";
+            this.richTextBoxPostalCode.Text = "45202";
             // 
             // richTextBoxCountry
             // 
             this.richTextBoxCountry.Location = new System.Drawing.Point(134, 186);
             this.richTextBoxCountry.Name = "richTextBoxCountry";
-            this.richTextBoxCountry.ReadOnly = true;
             this.richTextBoxCountry.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxCountry.TabIndex = 36;
-            this.richTextBoxCountry.Text = "";
+            this.richTextBoxCountry.Text = "US";
             // 
             // richTextBoxVendorNo
             // 
-            this.richTextBoxVendorNo.Location = new System.Drawing.Point(134, 255);
+            this.richTextBoxVendorNo.Location = new System.Drawing.Point(134, 238);
             this.richTextBoxVendorNo.Name = "richTextBoxVendorNo";
-            this.richTextBoxVendorNo.ReadOnly = true;
             this.richTextBoxVendorNo.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxVendorNo.TabIndex = 35;
-            this.richTextBoxVendorNo.Text = "";
+            this.richTextBoxVendorNo.Text = "15138370";
             // 
             // richTextBoxVendorName
             // 
-            this.richTextBoxVendorName.Location = new System.Drawing.Point(134, 286);
+            this.richTextBoxVendorName.Location = new System.Drawing.Point(134, 269);
             this.richTextBoxVendorName.Name = "richTextBoxVendorName";
-            this.richTextBoxVendorName.ReadOnly = true;
-            this.richTextBoxVendorName.Size = new System.Drawing.Size(169, 25);
+            this.richTextBoxVendorName.Size = new System.Drawing.Size(169, 42);
             this.richTextBoxVendorName.TabIndex = 34;
-            this.richTextBoxVendorName.Text = "";
+            this.richTextBoxVendorName.Text = "PROVEEDORA MEXICANA DE MONOFILAMENTOS S.A. DE ";
             // 
             // richTextBoxVendorAddress1
             // 
             this.richTextBoxVendorAddress1.Location = new System.Drawing.Point(134, 317);
             this.richTextBoxVendorAddress1.Name = "richTextBoxVendorAddress1";
-            this.richTextBoxVendorAddress1.ReadOnly = true;
             this.richTextBoxVendorAddress1.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxVendorAddress1.TabIndex = 33;
-            this.richTextBoxVendorAddress1.Text = "";
+            this.richTextBoxVendorAddress1.Text = "ORIENTE 217 NO. ";
             // 
             // richTextBoxVendorAddress2
             // 
             this.richTextBoxVendorAddress2.Location = new System.Drawing.Point(134, 355);
             this.richTextBoxVendorAddress2.Name = "richTextBoxVendorAddress2";
-            this.richTextBoxVendorAddress2.ReadOnly = true;
             this.richTextBoxVendorAddress2.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxVendorAddress2.TabIndex = 32;
-            this.richTextBoxVendorAddress2.Text = "";
+            this.richTextBoxVendorAddress2.Text = "AGRICOLA ORIENTAL";
             this.richTextBoxVendorAddress2.TextChanged += new System.EventHandler(this.richTextBoxVendorAddress2_TextChanged);
             // 
             // richTextBoxVendorCity
             // 
             this.richTextBoxVendorCity.Location = new System.Drawing.Point(134, 386);
             this.richTextBoxVendorCity.Name = "richTextBoxVendorCity";
-            this.richTextBoxVendorCity.ReadOnly = true;
             this.richTextBoxVendorCity.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxVendorCity.TabIndex = 31;
-            this.richTextBoxVendorCity.Text = "";
+            this.richTextBoxVendorCity.Text = "MEXICO ";
             // 
             // richTextBoxPoNo
             // 
             this.richTextBoxPoNo.Location = new System.Drawing.Point(436, 28);
             this.richTextBoxPoNo.Name = "richTextBoxPoNo";
-            this.richTextBoxPoNo.ReadOnly = true;
             this.richTextBoxPoNo.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxPoNo.TabIndex = 29;
-            this.richTextBoxPoNo.Text = "";
+            this.richTextBoxPoNo.Text = "N6P5500007750";
             // 
             // richTextBoxSapBox
             // 
             this.richTextBoxSapBox.Location = new System.Drawing.Point(436, 59);
             this.richTextBoxSapBox.Name = "richTextBoxSapBox";
-            this.richTextBoxSapBox.ReadOnly = true;
             this.richTextBoxSapBox.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxSapBox.TabIndex = 28;
-            this.richTextBoxSapBox.Text = "";
+            this.richTextBoxSapBox.Text = "N6P";
             // 
             // richTextBoxCurrency
             // 
             this.richTextBoxCurrency.Location = new System.Drawing.Point(436, 87);
             this.richTextBoxCurrency.Name = "richTextBoxCurrency";
-            this.richTextBoxCurrency.ReadOnly = true;
             this.richTextBoxCurrency.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxCurrency.TabIndex = 27;
-            this.richTextBoxCurrency.Text = "";
+            this.richTextBoxCurrency.Text = "USD";
+            this.richTextBoxCurrency.TextChanged += new System.EventHandler(this.richTextBoxCurrency_TextChanged);
             // 
             // richTextBoxUoM
             // 
             this.richTextBoxUoM.Location = new System.Drawing.Point(436, 118);
             this.richTextBoxUoM.Name = "richTextBoxUoM";
-            this.richTextBoxUoM.ReadOnly = true;
             this.richTextBoxUoM.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxUoM.TabIndex = 26;
-            this.richTextBoxUoM.Text = "";
+            this.richTextBoxUoM.Text = "KG";
             // 
             // richTextBoxInvoiceType
             // 
-            this.richTextBoxInvoiceType.Location = new System.Drawing.Point(436, 149);
+            this.richTextBoxInvoiceType.Location = new System.Drawing.Point(438, 149);
             this.richTextBoxInvoiceType.Name = "richTextBoxInvoiceType";
-            this.richTextBoxInvoiceType.ReadOnly = true;
             this.richTextBoxInvoiceType.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxInvoiceType.TabIndex = 25;
-            this.richTextBoxInvoiceType.Text = "";
+            this.richTextBoxInvoiceType.Text = "MM";
             // 
             // richTextBoxTaxRate
             // 
             this.richTextBoxTaxRate.Location = new System.Drawing.Point(436, 180);
             this.richTextBoxTaxRate.Name = "richTextBoxTaxRate";
-            this.richTextBoxTaxRate.ReadOnly = true;
             this.richTextBoxTaxRate.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxTaxRate.TabIndex = 24;
-            this.richTextBoxTaxRate.Text = "";
+            this.richTextBoxTaxRate.Text = "0";
             // 
             // richTextBoxTaxAmount
             // 
             this.richTextBoxTaxAmount.Location = new System.Drawing.Point(436, 218);
             this.richTextBoxTaxAmount.Name = "richTextBoxTaxAmount";
-            this.richTextBoxTaxAmount.ReadOnly = true;
             this.richTextBoxTaxAmount.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxTaxAmount.TabIndex = 23;
-            this.richTextBoxTaxAmount.Text = "";
+            this.richTextBoxTaxAmount.Text = "0";
             // 
             // richTextBoxLegalEntity
             // 
             this.richTextBoxLegalEntity.Location = new System.Drawing.Point(436, 330);
             this.richTextBoxLegalEntity.Name = "richTextBoxLegalEntity";
-            this.richTextBoxLegalEntity.ReadOnly = true;
             this.richTextBoxLegalEntity.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxLegalEntity.TabIndex = 22;
-            this.richTextBoxLegalEntity.Text = "";
+            this.richTextBoxLegalEntity.Text = "170";
             // 
             // richTextBoxLECountry
             // 
             this.richTextBoxLECountry.Location = new System.Drawing.Point(436, 295);
             this.richTextBoxLECountry.Name = "richTextBoxLECountry";
-            this.richTextBoxLECountry.ReadOnly = true;
             this.richTextBoxLECountry.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxLECountry.TabIndex = 21;
-            this.richTextBoxLECountry.Text = "";
+            this.richTextBoxLECountry.Text = "US";
             // 
             // richTextBoxnombre1
             // 
             this.richTextBoxnombre1.Location = new System.Drawing.Point(134, 31);
             this.richTextBoxnombre1.Name = "richTextBoxnombre1";
-            this.richTextBoxnombre1.ReadOnly = true;
             this.richTextBoxnombre1.Size = new System.Drawing.Size(169, 25);
             this.richTextBoxnombre1.TabIndex = 20;
-            this.richTextBoxnombre1.Text = "";
+            this.richTextBoxnombre1.Text = "ORAL-B LABORATORIES G.P.";
+            this.richTextBoxnombre1.TextChanged += new System.EventHandler(this.richTextBoxnombre1_TextChanged);
             // 
             // label_taxamount1
             // 
@@ -419,7 +419,7 @@
             // 
             this.label_vendor_name.AutoSize = true;
             this.label_vendor_name.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_vendor_name.Location = new System.Drawing.Point(6, 295);
+            this.label_vendor_name.Location = new System.Drawing.Point(5, 285);
             this.label_vendor_name.Name = "label_vendor_name";
             this.label_vendor_name.Size = new System.Drawing.Size(96, 20);
             this.label_vendor_name.TabIndex = 12;
@@ -459,7 +459,7 @@
             // 
             this.label_Vendor_No.AutoSize = true;
             this.label_Vendor_No.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Vendor_No.Location = new System.Drawing.Point(6, 267);
+            this.label_Vendor_No.Location = new System.Drawing.Point(7, 238);
             this.label_Vendor_No.Name = "label_Vendor_No";
             this.label_Vendor_No.Size = new System.Drawing.Size(80, 20);
             this.label_Vendor_No.TabIndex = 8;
@@ -580,32 +580,12 @@
             this.label_PoNo.Text = "PoNo";
             this.label_PoNo.Click += new System.EventHandler(this.label1_Click);
             // 
-            // labelBil
-            // 
-            this.labelBil.AutoSize = true;
-            this.labelBil.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBil.Location = new System.Drawing.Point(380, 366);
-            this.labelBil.Name = "labelBil";
-            this.labelBil.Size = new System.Drawing.Size(29, 20);
-            this.labelBil.TabIndex = 43;
-            this.labelBil.Text = "BIL";
-            // 
-            // richTextBoxbil
-            // 
-            this.richTextBoxbil.BackColor = System.Drawing.SystemColors.Control;
-            this.richTextBoxbil.Location = new System.Drawing.Point(436, 361);
-            this.richTextBoxbil.Name = "richTextBoxbil";
-            this.richTextBoxbil.ReadOnly = true;
-            this.richTextBoxbil.Size = new System.Drawing.Size(169, 25);
-            this.richTextBoxbil.TabIndex = 44;
-            this.richTextBoxbil.Text = "";
-            // 
             // Form_datos_sin_captura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(697, 514);
+            this.ClientSize = new System.Drawing.Size(706, 475);
             this.Controls.Add(this.groupBox_SM);
             this.Name = "Form_datos_sin_captura";
             this.Text = "Datos sin captura";
@@ -640,32 +620,32 @@
         private System.Windows.Forms.Label label_TaxAmount;
         private System.Windows.Forms.Label label_TaxRate;
         private System.Windows.Forms.Label label_InvoiceType;
-        private System.Windows.Forms.RichTextBox richTextBoxTaxAmount1;
-        private System.Windows.Forms.RichTextBox richTextBoxaddress1;
-        private System.Windows.Forms.RichTextBox richTextBoxaddress2;
-        private System.Windows.Forms.RichTextBox richTextBoxcity;
-        private System.Windows.Forms.RichTextBox richTextBoxPostalCode;
-        private System.Windows.Forms.RichTextBox richTextBoxCountry;
-        private System.Windows.Forms.RichTextBox richTextBoxVendorNo;
-        private System.Windows.Forms.RichTextBox richTextBoxVendorName;
-        private System.Windows.Forms.RichTextBox richTextBoxVendorAddress1;
-        private System.Windows.Forms.RichTextBox richTextBoxVendorAddress2;
-        private System.Windows.Forms.RichTextBox richTextBoxVendorCity;
-        private System.Windows.Forms.RichTextBox richTextBoxPoNo;
-        private System.Windows.Forms.RichTextBox richTextBoxSapBox;
-        private System.Windows.Forms.RichTextBox richTextBoxCurrency;
-        private System.Windows.Forms.RichTextBox richTextBoxUoM;
-        private System.Windows.Forms.RichTextBox richTextBoxInvoiceType;
-        private System.Windows.Forms.RichTextBox richTextBoxTaxRate;
-        private System.Windows.Forms.RichTextBox richTextBoxTaxAmount;
-        private System.Windows.Forms.RichTextBox richTextBoxLegalEntity;
-        private System.Windows.Forms.RichTextBox richTextBoxLECountry;
-        private System.Windows.Forms.RichTextBox richTextBoxnombre1;
         private System.Windows.Forms.Label label_taxamount1;
-        private System.Windows.Forms.RichTextBox richTextBoxVendorCountry;
         private System.Windows.Forms.Button button_siguiente;
-        private System.Windows.Forms.RichTextBox richTextBoxbil;
         private System.Windows.Forms.Label labelBil;
+        public System.Windows.Forms.RichTextBox richTextBoxnombre1;
+        public System.Windows.Forms.RichTextBox richTextBoxTaxAmount1;
+        public System.Windows.Forms.RichTextBox richTextBoxaddress1;
+        public System.Windows.Forms.RichTextBox richTextBoxaddress2;
+        public System.Windows.Forms.RichTextBox richTextBoxcity;
+        public System.Windows.Forms.RichTextBox richTextBoxPostalCode;
+        public System.Windows.Forms.RichTextBox richTextBoxCountry;
+        public System.Windows.Forms.RichTextBox richTextBoxVendorNo;
+        public System.Windows.Forms.RichTextBox richTextBoxVendorName;
+        public System.Windows.Forms.RichTextBox richTextBoxVendorAddress1;
+        public System.Windows.Forms.RichTextBox richTextBoxVendorAddress2;
+        public System.Windows.Forms.RichTextBox richTextBoxVendorCity;
+        public System.Windows.Forms.RichTextBox richTextBoxPoNo;
+        public System.Windows.Forms.RichTextBox richTextBoxSapBox;
+        public System.Windows.Forms.RichTextBox richTextBoxCurrency;
+        public System.Windows.Forms.RichTextBox richTextBoxUoM;
+        public System.Windows.Forms.RichTextBox richTextBoxInvoiceType;
+        public System.Windows.Forms.RichTextBox richTextBoxTaxRate;
+        public System.Windows.Forms.RichTextBox richTextBoxTaxAmount;
+        public System.Windows.Forms.RichTextBox richTextBoxLegalEntity;
+        public System.Windows.Forms.RichTextBox richTextBoxLECountry;
+        public System.Windows.Forms.RichTextBox richTextBoxVendorCountry;
+        public System.Windows.Forms.RichTextBox richTextBoxbil;
 
     }
 }

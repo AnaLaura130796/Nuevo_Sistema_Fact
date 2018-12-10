@@ -22,7 +22,7 @@ namespace SistemaFacturacion
             "Aviso",
             MessageBoxButtons.OK,
             MessageBoxIcon.Error,
-            MessageBoxDefaultButton.Button1);
+            MessageBoxDefaultButton.Button1);            
         }
         internal static void exportarTablaExcel(DataTable tabla)
         {

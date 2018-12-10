@@ -23,6 +23,8 @@ namespace SistemaFacturacion
         {
             Form_datos_sin_captura ventanaCambio = new Form_datos_sin_captura();
             ventanaCambio.ShowDialog();
+            MessageBox.Show(ventanaCambio.richTextBoxnombre1.Text); 
+             
 
         }
 

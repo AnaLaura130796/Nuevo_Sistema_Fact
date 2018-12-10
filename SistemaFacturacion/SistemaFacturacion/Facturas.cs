@@ -21,8 +21,8 @@ namespace SistemaFacturacion
             {
 
                 lines = System.IO.File.ReadAllLines(@"" + System.Windows.Forms.Application.StartupPath + "\\paths.txt");
-                pathPlantillaSinEncabezado = lines[0];
-                pathPlantillaFacturacion = lines[1];
+                pathPlantillaSinEncabezado = lines[0];//archivo excel sin encabezados
+                pathPlantillaFacturacion = lines[1];//factura final
             }
             catch
             {
