@@ -40,10 +40,9 @@
             this.label_InoviceAmount = new System.Windows.Forms.Label();
             this.label_LineItemAmount = new System.Windows.Forms.Label();
             this.richTextBox_InvoiceNumber = new System.Windows.Forms.RichTextBox();
-            this.button_generar_excel_sin_encabezados = new System.Windows.Forms.Button();
             this.button_genera_factura_final = new System.Windows.Forms.Button();
             this.buttonCapturarDatos = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_genera_excel_sin_encabezado = new System.Windows.Forms.Button();
             this.una_vez_por_cada_registro.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,22 +158,6 @@
             this.richTextBox_InvoiceNumber.TabIndex = 6;
             this.richTextBox_InvoiceNumber.Text = "";
             // 
-            // button_generar_excel_sin_encabezados
-            // 
-            this.button_generar_excel_sin_encabezados.FlatAppearance.BorderSize = 0;
-            this.button_generar_excel_sin_encabezados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue;
-            this.button_generar_excel_sin_encabezados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CadetBlue;
-            this.button_generar_excel_sin_encabezados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_generar_excel_sin_encabezados.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_generar_excel_sin_encabezados.Image = ((System.Drawing.Image)(resources.GetObject("button_generar_excel_sin_encabezados.Image")));
-            this.button_generar_excel_sin_encabezados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_generar_excel_sin_encabezados.Location = new System.Drawing.Point(3, 310);
-            this.button_generar_excel_sin_encabezados.Name = "button_generar_excel_sin_encabezados";
-            this.button_generar_excel_sin_encabezados.Size = new System.Drawing.Size(762, 45);
-            this.button_generar_excel_sin_encabezados.TabIndex = 25;
-            this.button_generar_excel_sin_encabezados.Text = "Generar excel sin encabezados";
-            this.button_generar_excel_sin_encabezados.UseVisualStyleBackColor = true;
-            // 
             // button_genera_factura_final
             // 
             this.button_genera_factura_final.FlatAppearance.BorderSize = 0;
@@ -184,7 +167,7 @@
             this.button_genera_factura_final.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_genera_factura_final.Image = ((System.Drawing.Image)(resources.GetObject("button_genera_factura_final.Image")));
             this.button_genera_factura_final.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_genera_factura_final.Location = new System.Drawing.Point(3, 372);
+            this.button_genera_factura_final.Location = new System.Drawing.Point(3, 317);
             this.button_genera_factura_final.Name = "button_genera_factura_final";
             this.button_genera_factura_final.Size = new System.Drawing.Size(762, 41);
             this.button_genera_factura_final.TabIndex = 26;
@@ -208,21 +191,21 @@
             this.buttonCapturarDatos.UseVisualStyleBackColor = true;
             this.buttonCapturarDatos.Click += new System.EventHandler(this.buttonCapturarDatos_Click);
             // 
-            // button1
+            // button_genera_excel_sin_encabezado
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(762, 45);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "lee la tabla";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_genera_excel_sin_encabezado.FlatAppearance.BorderSize = 0;
+            this.button_genera_excel_sin_encabezado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue;
+            this.button_genera_excel_sin_encabezado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CadetBlue;
+            this.button_genera_excel_sin_encabezado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_genera_excel_sin_encabezado.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_genera_excel_sin_encabezado.Image = ((System.Drawing.Image)(resources.GetObject("button_genera_excel_sin_encabezado.Image")));
+            this.button_genera_excel_sin_encabezado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_genera_excel_sin_encabezado.Location = new System.Drawing.Point(3, 254);
+            this.button_genera_excel_sin_encabezado.Name = "button_genera_excel_sin_encabezado";
+            this.button_genera_excel_sin_encabezado.Size = new System.Drawing.Size(762, 45);
+            this.button_genera_excel_sin_encabezado.TabIndex = 25;
+            this.button_genera_excel_sin_encabezado.Text = "Genera ahora el excel sin encabezados";
+            this.button_genera_excel_sin_encabezado.UseVisualStyleBackColor = true;
             // 
             // FormDatosCapturados
             // 
@@ -231,8 +214,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(805, 425);
             this.Controls.Add(this.button_genera_factura_final);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button_generar_excel_sin_encabezados);
+            this.Controls.Add(this.button_genera_excel_sin_encabezado);
             this.Controls.Add(this.buttonCapturarDatos);
             this.Controls.Add(this.una_vez_por_cada_registro);
             this.Name = "FormDatosCapturados";
@@ -253,13 +235,12 @@
         private System.Windows.Forms.Label label_InoviceAmount;
         private System.Windows.Forms.Label label_LineItemAmount;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button_generar_excel_sin_encabezados;
         private System.Windows.Forms.Button button_genera_factura_final;
         private System.Windows.Forms.Button buttonCapturarDatos;
         public System.Windows.Forms.RichTextBox richTextBox_InvoiceNumber;
         public System.Windows.Forms.DateTimePicker dateTimePicker_InvoiceDate;
         public System.Windows.Forms.RichTextBox richTextBox_invoiceCreditFlag;
         public System.Windows.Forms.RichTextBox richTextBox_LineItemAmount_calculado;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_genera_excel_sin_encabezado;
     }
 }

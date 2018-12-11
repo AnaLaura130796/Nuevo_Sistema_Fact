@@ -33,7 +33,7 @@ namespace SistemaFacturacion
                 {
                     Utilidades.mostrarMensajeValidacion("No se encontró información en la tabla para exportación. Contacta a Aseguramiento de calidad.");
                 }
-
+             
                 //Creamos una nueva aplicación de excel. 
                 Microsoft.Office.Interop.Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
                 //Abrimos la plantilla de reportes y creamos un nuevo workbook para mostrar ahí el reporte.
@@ -43,37 +43,13 @@ namespace SistemaFacturacion
                 //Obtenemos la primera hoja de la plantilla 
                 Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet = xlApp.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
                 //Copiamos la tabla en el portapapeles con el encabezado.
-                Utilidades.CopyDataTableToClipboard(tabla, false);
+                Utilidades.CopyDataTableToClipboard(tabla);
                 //Pegamos nuestra tabla para la generación del reporte. 
-                Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[1, 1] as Microsoft.Office.Interop.Excel.Range;
+                Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[8, 2] as Microsoft.Office.Interop.Excel.Range;
                 CR.Select();
                 xlWorkSheet.Paste();
-                //Colocamos los bordes de las celdas 
-                xlWorkSheet.Range[xlWorkSheet.Cells[1, 1], xlWorkSheet.Cells[tabla.Rows.Count + 1, tabla.Columns.Count]].borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
-                xlWorkSheet.Range[xlWorkSheet.Cells[1, 1], xlWorkSheet.Cells[tabla.Rows.Count + 1, tabla.Columns.Count]].borders.Weight = 2d;
-                //Coloreamos los encabezados de las celdas. 
-                xlWorkSheet.Range[xlWorkSheet.Cells[1, 1], xlWorkSheet.Cells[1, tabla.Columns.Count]].Interior.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.Blue);
-                xlWorkSheet.Range[xlWorkSheet.Cells[1, 1], xlWorkSheet.Cells[1, tabla.Columns.Count]].Font.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.White);
-                //Establecemos los márgenes para la impresión y hacemos autoFit
-                /*tabla.PageSetup.PrintArea = "A1:E" + ultimaCelda;
-                Microsoft.Office.Interop.Excel.Range aRange = sheetExportacion.get_Range("A7", "E" + ultimaCelda);
-                aRange.Rows.AutoFit();
-                 * */
-                /*   string rutaPDF = System.Windows.Forms.Application.StartupPath + "\\ultimoReporte.pdf";
-                   //MessageBox.Show("Guardado en " + rutaPDF); 
-                   xlWorkSheet.ExportAsFixedFormat(
-                   Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypePDF,
-                   rutaPDF,
-                   Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityStandard,
-                   true,
-                   false,
-                   Type.Missing,
-                   Type.Missing,
-                   false);
-                   xlApp.WindowState = Microsoft.Office.Interop.Excel.XlWindowState.xlMaximized;
-                   xlApp.Visible = true;
-                   xlApp.DisplayAlerts = true;
-                   xlWorkBook.WindowDeactivate += cerrarExcel;*/
+
+              
 
             }
             catch (Exception e)
@@ -113,7 +89,7 @@ namespace SistemaFacturacion
             }
         }
 
-        internal static void CopyDataTableToClipboard(DataTable DT, bool headerCopied = false)
+        internal static void CopyDataTableToClipboard(DataTable DT, bool headerCopied = true)
         {
             if (DT == null)
             {
@@ -141,8 +117,7 @@ namespace SistemaFacturacion
             //Generate Cell Value Data
             foreach (DataRow Row in DT.Rows)
             {
-                MessageBox.Show("Voy a recorrer la tabla para pasarla al portapapeles");
-                for (int i = 0; i < Row.ItemArray.Length; i++)
+              for (int i = 0; i < Row.ItemArray.Length; i++)
                 {
                    
                     //Handling the last cell of the line.
@@ -157,6 +132,7 @@ namespace SistemaFacturacion
                         Output.Append(Row.ItemArray[i].ToString() + "\t");
                     }
                 }
+                
             }
 
             Clipboard.SetText(Output.ToString());
