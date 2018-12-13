@@ -14,7 +14,7 @@ namespace SistemaFacturacion
 
         public static void getStringConnectionFacturaciones()
         {
-            stringConnectionFacturaciones = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + pathBaseDeDatos + "; Extended Properties='Excel 8.0;HDR=NO';";
+            stringConnectionFacturaciones = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + pathBaseDeDatos + "; Extended Properties='Excel 8.0;HDR=no';";
         }
 
         public static string stringConnectionFacturaciones { get; set; }
@@ -75,7 +75,7 @@ namespace SistemaFacturacion
             if (_conexionFacturacion.State == System.Data.ConnectionState.Open)
                 _conexionFacturacion.Close();
             MessageBox.Show(ex.ToString());
-            MessageBox.Show("Es posible que la base de datos de Especificaciones no este disponible");
+           MessageBox.Show("Es posible que la base de datos de Especificaciones no este disponible");
         }
 
         public static string pathBaseDeDatos { get; set; }

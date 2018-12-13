@@ -43,11 +43,12 @@ namespace SistemaFacturacion
                 //Obtenemos la primera hoja de la plantilla 
                 Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet = xlApp.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
                 //Copiamos la tabla en el portapapeles con el encabezado.
-                Utilidades.CopyDataTableToClipboard(tabla);
+                Utilidades.CopyDataTableToClipboard(tabla, false);
                 //Pegamos nuestra tabla para la generación del reporte. 
-                Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[8, 2] as Microsoft.Office.Interop.Excel.Range;
-                CR.Select();
+              //  Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[2, 1] as Microsoft.Office.Interop.Excel.Range;
+               // CR.Select();
                 xlWorkSheet.Paste();
+                xlApp.Visible = true;
 
               
 

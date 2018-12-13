@@ -49,12 +49,6 @@
   <ItemGroup>
     <Compile Include="DataBase.cs" />
     <Compile Include="Facturas.cs" />
-    <Compile Include="FormDataTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDataTable.Designer.cs">
-      <DependentUpon>FormDataTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormDatosCapturados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,35 +61,14 @@
     <Compile Include="FormDatosSinCaptura.Designer.cs">
       <DependentUpon>FormDatosSinCaptura.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormFacturacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormFacturacion.Designer.cs">
-      <DependentUpon>FormFacturacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLeerRuta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLeerRuta.Designer.cs">
-      <DependentUpon>FormLeerRuta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades.cs" />
-    <EmbeddedResource Include="FormDataTable.resx">
-      <DependentUpon>FormDataTable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDatosCapturados.resx">
       <DependentUpon>FormDatosCapturados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDatosSinCaptura.resx">
       <DependentUpon>FormDatosSinCaptura.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFacturacion.resx">
-      <DependentUpon>FormFacturacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLeerRuta.resx">
-      <DependentUpon>FormLeerRuta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -4,10 +4,7 @@ C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.csprojResolveAssemblyReference.cache
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.FormDatosCapturados.resources
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.Form_datos_sin_captura.resources
-C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.FormFacturacion.resources
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.Properties.Resources.resources
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.csproj.GenerateResource.Cache
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.exe
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.pdb
-C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.FormLeerRuta.resources
-C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.FormDataTable.resources

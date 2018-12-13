@@ -18,7 +18,7 @@ namespace SistemaFacturacion
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new FormFacturacion());
           //Application.Run(new Form_datos_sin_captura());
-          Application.Run(new FormDatosCapturados());
+        Application.Run(new FormDatosCapturados());
 
         }
     }
