@@ -68,7 +68,7 @@ namespace SistemaFacturacion
                 xlWorkSheet.Copy(Type.Missing, Type.Missing);
 
                 //Cerramos la plantilla original de excel. 
-                //    xlWorkBook.Close(0);
+                   xlWorkBook.Close(0);
 
 
                 //Comenzamos a trabajar con el workbook de exportación 
@@ -83,11 +83,11 @@ namespace SistemaFacturacion
                 //   sheetExportacion.Paste(CR, Clipboard.GetText());
 
 
-                
+
                 //iteración de la tabla creada sin encabezados
                 for (int i = 0; i < tabla_facturacion.Rows.Count; i++)
                 {
-                   
+
                     {
                         //REVISAR FORMATO DE FECHA
                         sheetExportacion.Cells[1, 2] = tabla_facturacion.Rows[i]["InvoiceDate"].ToString();
@@ -96,7 +96,7 @@ namespace SistemaFacturacion
                         sheetExportacion.Cells[5, 4] = tabla_facturacion.Rows[i]["Name_1"].ToString();
                         //AMARILLO
                         sheetExportacion.Cells[6, 4] = "PO BOX 701";
-                       //VERDE
+                        //VERDE
                         sheetExportacion.Cells[7, 4] = tabla_facturacion.Rows[i]["City1_1"] + " " + tabla_facturacion.Rows[i]["Address1_1"] + "," + tabla_facturacion.Rows[i]["PostalCode1"] + "-0701".ToString();
 
                         //VERDE
@@ -129,15 +129,23 @@ namespace SistemaFacturacion
 
                         //VERDE
                         sheetExportacion.Cells[44, 8] = tabla_facturacion.Rows[i]["InvoiceAmount"].ToString();
+                        for (int x = 0; x < tabla_facturacion.Rows.Count; x++)
+                        {
 
+                            sheetExportacion.Cells[(1 * x) + 22, 2] = tabla_facturacion.Rows[x]["Quantity"].ToString();
+                            sheetExportacion.Cells[(1 * x) +22, 7] = tabla_facturacion.Rows[x]["NetPrice"].ToString();
+                            sheetExportacion.Cells[(1 * x)+22, 8] = tabla_facturacion.Rows[x]["LineItemAmount"].ToString();
 
-
+                        }
+                      
                     }
+                   
+                    
                     int celdaCambioInicio = 20;
                     int celdaCambioFinal = 20;
                     //Obtenemos los límites de la hoja
                     int cantidadRegistros = tabla_facturacion.Rows.Count;
-                    int ultimaCelda = (cantidadRegistros) + 20;
+                    int ultimaCelda = (cantidadRegistros) + 50;
 
                     //Hacemos el merge del último periodo. 
                     if (celdaCambioFinal == 20)
@@ -160,7 +168,7 @@ namespace SistemaFacturacion
                     Microsoft.Office.Interop.Excel.Range range = sheetExportacion.get_Range("A" + (8), "H" + (tabla_facturacion.Rows.Count + 8));
 
                     //Hacemos el Autofit de las tareas
-                    aRange = sheetExportacion.get_Range("A30", "A30");
+                    aRange = sheetExportacion.get_Range("A40", "A40");
                     aRange.Rows.AutoFit();
                     xlApp.DisplayAlerts = false;
 
@@ -188,5 +196,3 @@ namespace SistemaFacturacion
         }
     }
 }
-    
-

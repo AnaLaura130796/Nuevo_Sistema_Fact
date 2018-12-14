@@ -28,13 +28,6 @@ namespace SistemaFacturacion
 
         }
 
-     
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
         private void label7_Click(object sender, EventArgs e)
         {
 

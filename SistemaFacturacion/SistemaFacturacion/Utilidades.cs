@@ -22,7 +22,7 @@ namespace SistemaFacturacion
             "Aviso",
             MessageBoxButtons.OK,
             MessageBoxIcon.Error,
-            MessageBoxDefaultButton.Button1);            
+            MessageBoxDefaultButton.Button1);
         }
         internal static void exportarTablaExcel(DataTable tabla)
         {
@@ -33,7 +33,7 @@ namespace SistemaFacturacion
                 {
                     Utilidades.mostrarMensajeValidacion("No se encontró información en la tabla para exportación. Contacta a Aseguramiento de calidad.");
                 }
-             
+
                 //Creamos una nueva aplicación de excel. 
                 Microsoft.Office.Interop.Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
                 //Abrimos la plantilla de reportes y creamos un nuevo workbook para mostrar ahí el reporte.
@@ -45,12 +45,12 @@ namespace SistemaFacturacion
                 //Copiamos la tabla en el portapapeles con el encabezado.
                 Utilidades.CopyDataTableToClipboard(tabla, false);
                 //Pegamos nuestra tabla para la generación del reporte. 
-              //  Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[2, 1] as Microsoft.Office.Interop.Excel.Range;
-               // CR.Select();
+                //  Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[2, 1] as Microsoft.Office.Interop.Excel.Range;
+                // CR.Select();
                 xlWorkSheet.Paste();
                 xlApp.Visible = true;
 
-              
+
 
             }
             catch (Exception e)
@@ -118,9 +118,9 @@ namespace SistemaFacturacion
             //Generate Cell Value Data
             foreach (DataRow Row in DT.Rows)
             {
-              for (int i = 0; i < Row.ItemArray.Length; i++)
+                for (int i = 0; i < Row.ItemArray.Length; i++)
                 {
-                   
+
                     //Handling the last cell of the line.
                     if (i == (Row.ItemArray.Length - 1))
                     {
@@ -133,7 +133,7 @@ namespace SistemaFacturacion
                         Output.Append(Row.ItemArray[i].ToString() + "\t");
                     }
                 }
-                
+
             }
 
             Clipboard.SetText(Output.ToString());
