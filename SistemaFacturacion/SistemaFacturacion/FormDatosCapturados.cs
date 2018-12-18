@@ -64,11 +64,12 @@ namespace SistemaFacturacion
                     {
                         filePath = openfiledialog.FileName;
                         DataBase.pathBaseDeDatos = filePath;
-                        if (openfiledialog.ShowDialog() == DialogResult.Cancel)
-                        {
-                            Utilidades.mostrarMensajeValidacion("Por favor selecciona un archivo");
-                            return;
-                        }
+
+                    }
+                    else
+                    {
+                        Utilidades.mostrarMensajeValidacion("Por favor selecciona un archivo");
+                        return;
                     }
                   
                 }
