@@ -54,7 +54,7 @@ namespace SistemaFacturacion
                 var filePath = string.Empty;
                 using (OpenFileDialog openfiledialog = new OpenFileDialog())
                 {   //abrirá en la ruta donde esta el archivo a entrar
-                    openfiledialog.InitialDirectory = "C:\\Users\\PMM\\Desktop\\sistemas\\SFacturacion\\plantillas";
+                    openfiledialog.InitialDirectory = "C:\\Users\\PMM\\Desktop\\sistemas\\sfact\\Nuevo_Sistema_Fact\\plantillas";
                     openfiledialog.RestoreDirectory = true;
                     //solo muestra los archivos de este tipo
                     openfiledialog.Filter = "xlsx files (*,.xlsx)|*.xlsx";
@@ -181,9 +181,9 @@ namespace SistemaFacturacion
                      ", '' as TaxType1 " +
                      ", '' as TaxRate1 " +
                      ", '{25}' as Tax_Amount1 " +
-                     ", [F7] as descripcion_1 " +
-                     ", [F8] as descripcion_2 " +
-                     ", [F9] as descripcion_3 " +
+                     ", [F7] as descripcion_fila_1 " +
+                     ", [F8] as descripcion_fila_2 " +
+                     ", [F9] as descripcion_fila_3 " +
                      "FROM [{26}$] where [F1]<>'' " +
                      "and [F1]<>'LineItemNumber' "
                      , invoiceCreditFlag

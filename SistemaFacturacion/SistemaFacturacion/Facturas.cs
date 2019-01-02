@@ -144,9 +144,9 @@ namespace SistemaFacturacion
                             sheetExportacion.Cells[(3 * x) + 22, 8] = tabla_facturacion.Rows[x]["LineItemAmount"].ToString();
 
                             //
-                            sheetExportacion.Cells[(3 * x) + 22, 3] = tabla_facturacion.Rows[x]["descripcion_1"].ToString();
-                            sheetExportacion.Cells[(3 * x) + 22 + 1, 3] = tabla_facturacion.Rows[x]["descripcion_2"].ToString(); ;
-                            sheetExportacion.Cells[(3 * x) + 22 + 2, 3] = tabla_facturacion.Rows[x]["descripcion_3"].ToString(); ;
+                            sheetExportacion.Cells[(3 * x) + 22, 3] = tabla_facturacion.Rows[x]["descripcion_fila_1"].ToString();
+                            sheetExportacion.Cells[(3 * x) + 22 + 1, 3] = tabla_facturacion.Rows[x]["descripcion_fila_2"].ToString(); ;
+                            sheetExportacion.Cells[(3 * x) + 22 + 2, 3] = tabla_facturacion.Rows[x]["descripcion_fila_3"].ToString(); ;
 
                         }
 
@@ -185,8 +185,6 @@ namespace SistemaFacturacion
                     Type.Missing,
                     Type.Missing,
                     false);
-
-
                     xlApp.Visible = true;
                     xlApp.WindowState = Microsoft.Office.Interop.Excel.XlWindowState.xlMaximized;
 
