@@ -23,8 +23,6 @@ namespace SistemaFacturacion
         {
             button_genera_factura_final.Visible = false;
             label_InoviceAmount.Visible = false;
-            label_LineItemAmount.Visible = false;
-            richTextBox_LineItemAmount_calculado.Visible = false;
             richTextBox_InvoiceAmount_calculado.Visible = false;
         }
 
@@ -226,15 +224,13 @@ namespace SistemaFacturacion
             buttonCapturarDatos.Visible = false;
             button_genera_factura_final.Visible = true;
             label_InoviceAmount.Visible = true;
-            label_LineItemAmount.Visible = true;
-            richTextBox_LineItemAmount_calculado.Visible = true;
             richTextBox_InvoiceAmount_calculado.Visible = true;
 
 
             richTextBox_InvoiceAmount_calculado.Text = tabla.Rows[0]["InvoiceAmount"].ToString();
-            richTextBox_LineItemAmount_calculado.Text = tabla.Rows[0]["LineItemAmount"].ToString();
+       
             richTextBox_InvoiceAmount_calculado.Text.ToString();
-            richTextBox_LineItemAmount_calculado.Text.ToString();
+           
             richTextBox_invoiceCreditFlag.Text.ToString();
             richTextBox_InvoiceNumber.Text.ToString();
 
@@ -245,6 +241,11 @@ namespace SistemaFacturacion
                 richTextBox_InvoiceNumber.ReadOnly = true;
                 richTextBox_invoiceCreditFlag.ReadOnly = true;
                 Facturas.generarFacturaFinal(tabla);
+            }
+
+            private void label_LineItemAmount_Click(object sender, EventArgs e)
+            {
+
             }
         }
    

@@ -88,17 +88,17 @@ namespace SistemaFacturacion
 
                     {
                         //REVISAR FORMATO DE FECHA
-                        sheetExportacion.Cells[1, 2] = tabla_facturacion.Rows[i]["InvoiceDate"].ToString();
+                        sheetExportacion.Cells[1, 2] = tabla_facturacion.Rows[0]["InvoiceDate"].ToString();
                         //VERDE
                         //sheetExportacion.Cells[4, 4] = "";
-                        sheetExportacion.Cells[5, 4] = tabla_facturacion.Rows[i]["Name_1"].ToString();
+                        sheetExportacion.Cells[5, 4] = tabla_facturacion.Rows[0]["Name_1"].ToString();
                         //AMARILLO
                         // sheetExportacion.Cells[6, 4] = "";
                         //VERDE
-                        sheetExportacion.Cells[7, 4] = tabla_facturacion.Rows[i]["City1_1"] + " " + tabla_facturacion.Rows[i]["Address1_1"] + "," + tabla_facturacion.Rows[i]["PostalCode1"] + "-0701".ToString();
+                        sheetExportacion.Cells[7, 4] = tabla_facturacion.Rows[0]["City1_1"] + " " + tabla_facturacion.Rows[i]["Address1_1"] + "," + tabla_facturacion.Rows[i]["PostalCode1"] + "-0701".ToString();
 
                         //VERDE
-                        sheetExportacion.Cells[8, 4] = tabla_facturacion.Rows[i]["Country_1"].ToString();
+                        sheetExportacion.Cells[8, 4] = tabla_facturacion.Rows[0]["Country_1"].ToString();
                         //AMARILLO
                         //sheetExportacion.Cells[9, 4] = "";
                         //sheetExportacion.Cells[12, 4] = "";
@@ -123,7 +123,7 @@ namespace SistemaFacturacion
                         //sheetExportacion.Cells[17, 4] = "";
 
                         //VERDE
-                        sheetExportacion.Cells[45, 4] = "ALL PRICES ARE " + tabla_facturacion.Rows[i]["Currency_1"].ToString(); ;
+                        sheetExportacion.Cells[45, 4] = "ALL PRICES ARE " + tabla_facturacion.Rows[0]["Currency_1"].ToString(); ;
 
                         //VERDE
                         sheetExportacion.Cells[44, 8] = tabla_facturacion.Rows[i]["InvoiceAmount"].ToString();
@@ -131,14 +131,14 @@ namespace SistemaFacturacion
                         {
 
                             sheetExportacion.Cells[(1 * x) + 22, 2] = tabla_facturacion.Rows[x]["Quantity"].ToString();
-                            sheetExportacion.Cells[(1 * x) +22, 7] = tabla_facturacion.Rows[x]["NetPrice"].ToString();
-                            sheetExportacion.Cells[(1 * x)+22, 8] = tabla_facturacion.Rows[x]["LineItemAmount"].ToString();
+                            sheetExportacion.Cells[(1 * x) + 22, 7] = tabla_facturacion.Rows[x]["NetPrice"].ToString();
+                            sheetExportacion.Cells[(1 * x) + 22, 8] = tabla_facturacion.Rows[x]["LineItemAmount"].ToString();
 
                         }
-                      
+
                     }
-                   
-                    
+
+                }
                     
                     //Obtenemos los límites de la hoja
                     /*int cantidadRegistros = tabla_facturacion.Rows.Count;
@@ -176,7 +176,7 @@ namespace SistemaFacturacion
                     xlApp.Visible = true;
                     xlApp.WindowState = Microsoft.Office.Interop.Excel.XlWindowState.xlMaximized;
 
-                }
+             
 
 
             }
