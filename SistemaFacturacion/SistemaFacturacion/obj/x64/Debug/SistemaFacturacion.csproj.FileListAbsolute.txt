@@ -17,3 +17,13 @@ C:\Users\PMM\Desktop\sistemas\sistema_facturacion\Nuevo_Sistema_Fact\SistemaFact
 C:\Users\PMM\Desktop\sistemas\sistema_facturacion\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Form_datos_sin_captura.resources
 C:\Users\PMM\Desktop\sistemas\sistema_facturacion\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Properties.Resources.resources
 C:\Users\PMM\Desktop\sistemas\sistema_facturacion\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.csproj.GenerateResource.Cache
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\SistemaFacturacion.exe.config
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.exe
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.pdb
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\SistemaFacturacion.exe
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\SistemaFacturacion.pdb
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.csprojResolveAssemblyReference.cache
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.FormDatosCapturados.resources
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Form_datos_sin_captura.resources
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Properties.Resources.resources
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.csproj.GenerateResource.Cache

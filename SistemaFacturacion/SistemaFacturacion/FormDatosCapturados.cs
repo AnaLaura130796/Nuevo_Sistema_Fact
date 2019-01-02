@@ -147,7 +147,7 @@ namespace SistemaFacturacion
                      ", [F2] as Quantity " +
                      ", '{21}' as UoM " +
                      ", [F3] as NetPrice " +
-                     ", [F4] as LineItemAmount " +
+                     ", ROUND([F4],2) as LineItemAmount " +
                      ", '' as PoNo_2 " +
                      ", [F5] as MaterialNumber " +
                      ", '' as TaxID_A " +
@@ -159,7 +159,7 @@ namespace SistemaFacturacion
                      ", '' as ScbIndicator " +
                      ", '' as WithHoldingTax " +
                      ", '' as NetAmount " + //Error
-                     ",  [F6] as InvoiceAmount " +
+                     ", ROUND([F6],2) as InvoiceAmount " +
                      ", '' as TaxID_B " +
                      ", '' as TaxType " +
                      ", '{22}' as Tax_Amount " + //Sin Error
@@ -181,8 +181,11 @@ namespace SistemaFacturacion
                      ", '' as TaxType1 " +
                      ", '' as TaxRate1 " +
                      ", '{25}' as Tax_Amount1 " +
+                     ", [F7] as descripcion_1 " +
+                     ", [F8] as descripcion_2 " +
+                     ", [F9] as descripcion_3 " +
                      "FROM [{26}$] where [F1]<>'' " +
-                     "and [F1]<>'LineItemNumber'"
+                     "and [F1]<>'LineItemNumber' "
                      , invoiceCreditFlag
                      , invoiceDate
                      , invoiceNumber
@@ -238,9 +241,11 @@ namespace SistemaFacturacion
 
             private void button_genera_factura_final_Click(object sender, EventArgs e)
             {
+                this.Cursor = Cursors.WaitCursor;
                 richTextBox_InvoiceNumber.ReadOnly = true;
                 richTextBox_invoiceCreditFlag.ReadOnly = true;
-                Facturas.generarFacturaFinal(tabla);
+                Facturas.generarFacturaFinal(tabla, dateTimePicker_InvoiceDate.Value);
+                this.Cursor = Cursors.Default;
             }
 
             private void label_LineItemAmount_Click(object sender, EventArgs e)

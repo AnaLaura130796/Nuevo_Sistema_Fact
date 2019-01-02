@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Net.Mail;
 using System.Runtime.InteropServices;
@@ -37,8 +38,12 @@ namespace SistemaFacturacion
 
 
         //CLASE UTILIZADA PARA LA GENERACIÓN DE LA FACTURA, PLANTILLA FINAL 
-        public static void generarFacturaFinal(DataTable tabla_facturacion)
+        public static void generarFacturaFinal(DataTable tabla_facturacion, DateTime fecha)
         {
+            string dia_fact = fecha.ToString("dd");
+            string mes_fact = fecha.ToString("MMMM", CultureInfo.CreateSpecificCulture("en")).ToUpper();
+            string año_fact = fecha.ToString("yyyy");
+            string fecha_fact = mes_fact + " " + dia_fact + "," + año_fact;
 
             //Primero recibe los registros del DataTable
             if (tabla_facturacion == null)
@@ -80,15 +85,19 @@ namespace SistemaFacturacion
                 CR.Select();
                 //   sheetExportacion.Paste(CR, Clipboard.GetText());
 
-                
+             
+
 
                 //iteración de la tabla creada sin encabezados
                 for (int i = 0; i < tabla_facturacion.Rows.Count; i++)
                 {
 
                     {
+                        
+                      
                         //REVISAR FORMATO DE FECHA
-                        sheetExportacion.Cells[1, 2] = tabla_facturacion.Rows[0]["InvoiceDate"].ToString();
+                       sheetExportacion.Cells[1, 2] =fecha_fact;
+
                         //VERDE
                         //sheetExportacion.Cells[4, 4] = "";
                         sheetExportacion.Cells[5, 4] = tabla_facturacion.Rows[0]["Name_1"].ToString();
@@ -130,9 +139,14 @@ namespace SistemaFacturacion
                         for (int x = 0; x < tabla_facturacion.Rows.Count; x++)
                         {
 
-                            sheetExportacion.Cells[(1 * x) + 22, 2] = tabla_facturacion.Rows[x]["Quantity"].ToString();
-                            sheetExportacion.Cells[(1 * x) + 22, 7] = tabla_facturacion.Rows[x]["NetPrice"].ToString();
-                            sheetExportacion.Cells[(1 * x) + 22, 8] = tabla_facturacion.Rows[x]["LineItemAmount"].ToString();
+                            sheetExportacion.Cells[(3 * x) + 22, 2] = tabla_facturacion.Rows[x]["Quantity"].ToString();
+                            sheetExportacion.Cells[(3 * x) + 22, 7] = tabla_facturacion.Rows[x]["NetPrice"].ToString();
+                            sheetExportacion.Cells[(3 * x) + 22, 8] = tabla_facturacion.Rows[x]["LineItemAmount"].ToString();
+
+                            //
+                            sheetExportacion.Cells[(3 * x) + 22, 3] = tabla_facturacion.Rows[x]["descripcion_1"].ToString();
+                            sheetExportacion.Cells[(3 * x) + 22 + 1, 3] = tabla_facturacion.Rows[x]["descripcion_2"].ToString(); ;
+                            sheetExportacion.Cells[(3 * x) + 22 + 2, 3] = tabla_facturacion.Rows[x]["descripcion_3"].ToString(); ;
 
                         }
 

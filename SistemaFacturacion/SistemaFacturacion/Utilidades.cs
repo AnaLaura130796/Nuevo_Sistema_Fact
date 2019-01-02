@@ -42,12 +42,22 @@ namespace SistemaFacturacion
                 Microsoft.Office.Interop.Excel.Sheets sheets = xlWorkBook.Worksheets;
                 //Obtenemos la primera hoja de la plantilla 
                 Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet = xlApp.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
+
                 //Copiamos la tabla en el portapapeles con el encabezado.
                 Utilidades.CopyDataTableToClipboard(tabla, false);
                 //Pegamos nuestra tabla para la generación del reporte. 
-                //  Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[2, 1] as Microsoft.Office.Interop.Excel.Range;
-                // CR.Select();
+                
+                Microsoft.Office.Interop.Excel.Range CR = xlWorkSheet.Cells[1, 1] as Microsoft.Office.Interop.Excel.Range;
+                CR.Select();
+
                 xlWorkSheet.Paste();
+
+                //Código para quitar la primera fila. 
+                Microsoft.Office.Interop.Excel.Range primera_celda = xlWorkSheet.Cells[1, 1] as Microsoft.Office.Interop.Excel.Range;
+                primera_celda.EntireRow.Delete(); 
+
+
+
                 xlApp.Visible = true;
 
 
