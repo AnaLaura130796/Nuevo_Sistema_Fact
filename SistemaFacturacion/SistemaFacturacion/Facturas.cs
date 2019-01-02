@@ -20,9 +20,8 @@ namespace SistemaFacturacion
             try
             {
 
-                lines = System.IO.File.ReadAllLines(@"" + System.Windows.Forms.Application.StartupPath + "\\paths.txt");
-                pathPlantillaSinEncabezado = lines[0];//archivo excel sin encabezados
-                pathPlantillaFacturacion = lines[1];//factura final
+                lines = System.IO.File.ReadAllLines(@"" + System.Windows.Forms.Application.StartupPath + "\\paths.txt");                
+                pathPlantillaFacturacion = lines[0];//factura final
             }
             catch
             {
@@ -33,8 +32,7 @@ namespace SistemaFacturacion
 
 
         public static string pathPlantillaFacturacion { get; set; }
-
-        public static string pathPlantillaSinEncabezado { get; set; }
+        
 
 
 
@@ -82,7 +80,7 @@ namespace SistemaFacturacion
                 CR.Select();
                 //   sheetExportacion.Paste(CR, Clipboard.GetText());
 
-
+                
 
                 //iteración de la tabla creada sin encabezados
                 for (int i = 0; i < tabla_facturacion.Rows.Count; i++)
@@ -92,37 +90,37 @@ namespace SistemaFacturacion
                         //REVISAR FORMATO DE FECHA
                         sheetExportacion.Cells[1, 2] = tabla_facturacion.Rows[i]["InvoiceDate"].ToString();
                         //VERDE
-                        sheetExportacion.Cells[4, 4] = "PROCTER & GAMBLE COMPANY";
+                        //sheetExportacion.Cells[4, 4] = "";
                         sheetExportacion.Cells[5, 4] = tabla_facturacion.Rows[i]["Name_1"].ToString();
                         //AMARILLO
-                        sheetExportacion.Cells[6, 4] = "PO BOX 701";
+                        // sheetExportacion.Cells[6, 4] = "";
                         //VERDE
                         sheetExportacion.Cells[7, 4] = tabla_facturacion.Rows[i]["City1_1"] + " " + tabla_facturacion.Rows[i]["Address1_1"] + "," + tabla_facturacion.Rows[i]["PostalCode1"] + "-0701".ToString();
 
                         //VERDE
                         sheetExportacion.Cells[8, 4] = tabla_facturacion.Rows[i]["Country_1"].ToString();
                         //AMARILLO
-                        sheetExportacion.Cells[9, 4] = "ATTN: A/P DEPARTMENT";
-                        sheetExportacion.Cells[12, 4] = "100 DAYS DUE NET";
+                        //sheetExportacion.Cells[9, 4] = "";
+                        //sheetExportacion.Cells[12, 4] = "";
                         sheetExportacion.Cells[14, 4] = "PO# " + tabla_facturacion.Rows[0]["PoNo_1"].ToString();
                         sheetExportacion.Cells[15, 4] = "EDI COMPANY CODE: " + tabla_facturacion.Rows[0]["LegalEntity_1"].ToString();
 
 
                         //COLOR ROJO
-                        sheetExportacion.Cells[4, 6] = "ORAL-B LABORATORIES";
-                        sheetExportacion.Cells[5, 6] = "TAX ID No: 42-1497813";
-                        sheetExportacion.Cells[6, 6] = "1832 LOWER MUSCATINE ROAD";
-                        sheetExportacion.Cells[7, 6] = "IOWA CITY, IA 52240";
-                        sheetExportacion.Cells[8, 6] = "U.S.A.";
+                        //sheetExportacion.Cells[4, 6] = "";
+                        //sheetExportacion.Cells[5, 6] = "";
+                        //sheetExportacion.Cells[6, 6] = "";
+                        //sheetExportacion.Cells[7, 6] = "";
+                        //sheetExportacion.Cells[8, 6] = "";
 
                         //AMARILLO
-                        sheetExportacion.Cells[12, 6] = "MATERIALS RELEASED FROM BCW";
-                        sheetExportacion.Cells[14, 6] = "WAREHOUSE AGAINST:";
+                        //sheetExportacion.Cells[12, 6] = "";
+                        //sheetExportacion.Cells[14, 6] = "";
 
                         //VERDE
-                        sheetExportacion.Cells[15, 6] = "BOL# P500928181 (09/28)";
+                        //sheetExportacion.Cells[15, 6] = "";
                         //AMARILLO
-                        sheetExportacion.Cells[17, 4] = "P&G CONTACT: ZHEN CHEN, Phone: 00 86 186 6485 7490, e-mail: chen.z.15@pg.com";
+                        //sheetExportacion.Cells[17, 4] = "";
 
                         //VERDE
                         sheetExportacion.Cells[45, 4] = "ALL PRICES ARE " + tabla_facturacion.Rows[i]["Currency_1"].ToString(); ;
@@ -141,23 +139,12 @@ namespace SistemaFacturacion
                     }
                    
                     
-                    int celdaCambioInicio = 20;
-                    int celdaCambioFinal = 20;
+                    
                     //Obtenemos los límites de la hoja
-                    int cantidadRegistros = tabla_facturacion.Rows.Count;
+                    /*int cantidadRegistros = tabla_facturacion.Rows.Count;
                     int ultimaCelda = (cantidadRegistros) + 50;
 
-                    //Hacemos el merge del último periodo. 
-                    if (celdaCambioFinal == 20)
-                    {
-                        celdaCambioFinal = 17;
-                    }
-                    Microsoft.Office.Interop.Excel.Range rangoMerge = sheetExportacion.get_Range("A" + (celdaCambioFinal + 1), "A" + (ultimaCelda));
-                    rangoMerge.MergeCells = true;
-                    rangoMerge.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-                    rangoMerge.VerticalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-                    celdaCambioInicio = celdaCambioFinal + 1;
-
+                    
                     //Establecemos los márgenes para la impresión.             
                     sheetExportacion.PageSetup.PrintArea = "A1:H" + ultimaCelda;
                     Microsoft.Office.Interop.Excel.Range aRange = sheetExportacion.get_Range("A20", "I" + ultimaCelda);
@@ -169,7 +156,7 @@ namespace SistemaFacturacion
 
                     //Hacemos el Autofit de las tareas
                     aRange = sheetExportacion.get_Range("A40", "A40");
-                    aRange.Rows.AutoFit();
+                    aRange.Rows.AutoFit();*/
                     xlApp.DisplayAlerts = false;
 
 

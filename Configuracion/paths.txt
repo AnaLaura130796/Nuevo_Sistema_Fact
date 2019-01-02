@@ -1,2 +1,1 @@
-C:\Users\PMM\Desktop\sistemas\SFacturacion\plantillas\carga_de_datos.xlsx
-C:\Users\PMM\Desktop\sistemas\SFacturacion\plantillas\plantilla1.xlsx
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\plantillas\plantilla1.xlsx

@@ -8,3 +8,13 @@ C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.csproj.GenerateResource.Cache
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.exe
 C:\Users\PMM\Desktop\sistemas\SFacturacion\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.pdb
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\Debug\SistemaFacturacion.exe.config
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.exe
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.pdb
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\Debug\SistemaFacturacion.exe
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\Debug\SistemaFacturacion.pdb
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.FormDatosCapturados.resources
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.Form_datos_sin_captura.resources
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.Properties.Resources.resources
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\Debug\SistemaFacturacion.csproj.GenerateResource.Cache

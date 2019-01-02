@@ -1,0 +1,9 @@
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\SistemaFacturacion.exe.config
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\SistemaFacturacion.exe
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\SistemaFacturacion.pdb
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.FormDatosCapturados.resources
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Form_datos_sin_captura.resources
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Properties.Resources.resources
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.csproj.GenerateResource.Cache
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.exe
+C:\Users\Kevin\Desktop\Sistemas\facturacion_procter\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.pdb
