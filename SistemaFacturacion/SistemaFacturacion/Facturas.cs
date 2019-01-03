@@ -23,6 +23,7 @@ namespace SistemaFacturacion
 
                 lines = System.IO.File.ReadAllLines(@"" + System.Windows.Forms.Application.StartupPath + "\\paths.txt");                
                 pathPlantillaFacturacion = lines[0];//factura final
+                pathManualdeUsuario = lines[1]; //Ruta para el manual del usuario 
             }
             catch
             {
@@ -135,7 +136,7 @@ namespace SistemaFacturacion
                         sheetExportacion.Cells[45, 4] = "ALL PRICES ARE " + tabla_facturacion.Rows[0]["Currency_1"].ToString(); ;
 
                         //VERDE
-                        sheetExportacion.Cells[44, 8] = tabla_facturacion.Rows[i]["InvoiceAmount"].ToString();
+                        sheetExportacion.Cells[44, 8] = tabla_facturacion.Rows[0]["InvoiceAmount"].ToString();
                         for (int x = 0; x < tabla_facturacion.Rows.Count; x++)
                         {
 
@@ -193,5 +194,9 @@ namespace SistemaFacturacion
 
             }
         }
+
+        public static string pathManualdeUsuario { get; set; }
+
+      
     }
 }

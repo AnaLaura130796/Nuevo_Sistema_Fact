@@ -41,7 +41,11 @@
             this.richTextBox_InvoiceNumber = new System.Windows.Forms.RichTextBox();
             this.button_genera_factura_final = new System.Windows.Forms.Button();
             this.buttonCapturarDatos = new System.Windows.Forms.Button();
+            this.menuStrip_manual = new System.Windows.Forms.MenuStrip();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.una_vez_por_cada_registro.SuspendLayout();
+            this.menuStrip_manual.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_InvoiceDate
@@ -77,7 +81,7 @@
             this.una_vez_por_cada_registro.Controls.Add(this.richTextBox_InvoiceNumber);
             this.una_vez_por_cada_registro.Controls.Add(this.label_InvoiceDate);
             this.una_vez_por_cada_registro.Controls.Add(this.label_InoviceNumber);
-            this.una_vez_por_cada_registro.Location = new System.Drawing.Point(12, 12);
+            this.una_vez_por_cada_registro.Location = new System.Drawing.Point(12, 27);
             this.una_vez_por_cada_registro.Name = "una_vez_por_cada_registro";
             this.una_vez_por_cada_registro.Size = new System.Drawing.Size(722, 278);
             this.una_vez_por_cada_registro.TabIndex = 5;
@@ -164,7 +168,7 @@
             this.button_genera_factura_final.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_genera_factura_final.Image = ((System.Drawing.Image)(resources.GetObject("button_genera_factura_final.Image")));
             this.button_genera_factura_final.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_genera_factura_final.Location = new System.Drawing.Point(382, 305);
+            this.button_genera_factura_final.Location = new System.Drawing.Point(382, 311);
             this.button_genera_factura_final.Name = "button_genera_factura_final";
             this.button_genera_factura_final.Size = new System.Drawing.Size(352, 51);
             this.button_genera_factura_final.TabIndex = 26;
@@ -182,7 +186,7 @@
             this.buttonCapturarDatos.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapturarDatos.Image = ((System.Drawing.Image)(resources.GetObject("buttonCapturarDatos.Image")));
             this.buttonCapturarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCapturarDatos.Location = new System.Drawing.Point(12, 305);
+            this.buttonCapturarDatos.Location = new System.Drawing.Point(12, 311);
             this.buttonCapturarDatos.Name = "buttonCapturarDatos";
             this.buttonCapturarDatos.Size = new System.Drawing.Size(364, 51);
             this.buttonCapturarDatos.TabIndex = 0;
@@ -190,23 +194,56 @@
             this.buttonCapturarDatos.UseVisualStyleBackColor = false;
             this.buttonCapturarDatos.Click += new System.EventHandler(this.buttonCapturarDatos_Click);
             // 
+            // menuStrip_manual
+            // 
+            this.menuStrip_manual.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip_manual.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verToolStripMenuItem});
+            this.menuStrip_manual.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip_manual.Name = "menuStrip_manual";
+            this.menuStrip_manual.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip_manual.Size = new System.Drawing.Size(760, 24);
+            this.menuStrip_manual.TabIndex = 27;
+            this.menuStrip_manual.Text = "Manual del usuario";
+            // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manualDeUsuarioToolStripMenuItem});
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.verToolStripMenuItem.Text = "Ver";
+            this.verToolStripMenuItem.Click += new System.EventHandler(this.verToolStripMenuItem_Click);
+            // 
+            // manualDeUsuarioToolStripMenuItem
+            // 
+            this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
+            this.manualDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsuarioToolStripMenuItem_Click);
+            // 
             // FormDatosCapturados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(760, 378);
+            this.ClientSize = new System.Drawing.Size(760, 403);
             this.Controls.Add(this.button_genera_factura_final);
             this.Controls.Add(this.buttonCapturarDatos);
             this.Controls.Add(this.una_vez_por_cada_registro);
+            this.Controls.Add(this.menuStrip_manual);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip_manual;
             this.Name = "FormDatosCapturados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registros";
             this.Load += new System.EventHandler(this.FormDatosCapturados_Load);
             this.una_vez_por_cada_registro.ResumeLayout(false);
             this.una_vez_por_cada_registro.PerformLayout();
+            this.menuStrip_manual.ResumeLayout(false);
+            this.menuStrip_manual.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -224,5 +261,8 @@
         public System.Windows.Forms.RichTextBox richTextBox_invoiceCreditFlag;
         public System.Windows.Forms.RichTextBox richTextBox_InvoiceAmount_calculado;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MenuStrip menuStrip_manual;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
     }
 }

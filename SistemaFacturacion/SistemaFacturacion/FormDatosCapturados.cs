@@ -252,6 +252,17 @@ namespace SistemaFacturacion
             {
 
             }
+
+            private void verToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+
+            }
+
+            private void manualDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+                string ruta = "C:\\Users\\PMM\\Desktop\\sistemas\\sfact\\Nuevo_Sistema_Fact\\plantillas\\ManualDeUsuario_SFacturacion.pdf";
+                Utilidades.verPDF(ruta);
+            }
         }
    
 }

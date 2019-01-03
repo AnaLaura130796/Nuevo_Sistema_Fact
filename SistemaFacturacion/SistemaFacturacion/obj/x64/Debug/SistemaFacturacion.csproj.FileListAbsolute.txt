@@ -27,3 +27,5 @@ C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\Sistem
 C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Form_datos_sin_captura.resources
 C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.Properties.Resources.resources
 C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.csproj.GenerateResource.Cache
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\obj\x64\Debug\SistemaFacturacion.FormVistaPrevia.resources
+C:\Users\PMM\Desktop\sistemas\sfact\Nuevo_Sistema_Fact\SistemaFacturacion\SistemaFacturacion\bin\x64\Debug\PdfiumViewer.dll

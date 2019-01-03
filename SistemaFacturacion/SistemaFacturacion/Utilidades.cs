@@ -149,5 +149,22 @@ namespace SistemaFacturacion
             Clipboard.SetText(Output.ToString());
         }
 
+
+        public static void verPDF(string path)
+        {
+            try
+            {
+                FormVistaPrevia vistaPrevia = new FormVistaPrevia();
+                vistaPrevia.Navegar(path);
+                vistaPrevia.Show();
+                vistaPrevia.TopMost = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo leer el manual de usuario. \n" + ex.ToString());
+            }
+        }
+
+       
     }
 }
