@@ -651,6 +651,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1024, 524);
             this.Controls.Add(this.groupBox_SM);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_datos_sin_captura";
             this.Text = "Registros";
             this.Load += new System.EventHandler(this.Form_datos_sin_captura_Load);

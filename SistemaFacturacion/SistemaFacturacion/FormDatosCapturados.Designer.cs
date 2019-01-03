@@ -199,6 +199,7 @@
             this.Controls.Add(this.button_genera_factura_final);
             this.Controls.Add(this.buttonCapturarDatos);
             this.Controls.Add(this.una_vez_por_cada_registro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDatosCapturados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registros";
